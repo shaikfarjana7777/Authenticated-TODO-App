@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticated ToDo App Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .container {
+            
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:rgb(250, 248, 250) ;
+            background-color:rgb(65, 8, 65);
+            box-shadow: 0 0 150px rgba(216, 15, 99, 1);
+            border-radius: 13px;
+            background: linear-gradient(white,rgb(160, 54, 71));
+            
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(160, 54, 71);
+            text-decoration:underline ;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .btn-register {
+            background-color: #fbfdfc;
+            color:rgb(65, 8, 65);
+            background: linear-gradient(rgb(160, 54, 71),white);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1   class="header">Authenticated ToDo App</h1>
+        <div id="registration-form">
+            <h2>Register</h2>
+            <form id="register-form" action="/api/register" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-register">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
