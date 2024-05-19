@@ -83,5 +83,5 @@ def delete(item_id):
     return redirect('/create')
 
 if __name__ == '__main__':
-    # Runs the Flask application
+    # Runs the Flask  application 
     app.run(debug=True)
