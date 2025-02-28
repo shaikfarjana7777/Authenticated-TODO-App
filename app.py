@@ -4,6 +4,7 @@ from passlib.hash import sha256_crypt
 
 app = Flask(__name__)
 
+
 db = mysql.connector.connect(
     host="localhost",
     user="root",
